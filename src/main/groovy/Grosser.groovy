@@ -73,7 +73,7 @@ class Grosser {
     }
 
     static void resolveArguments(String... args) {
-        def argCtl = new CliBuilder(usage: "java -jar grosser.jar -[hsd] " +
+        def argCtl = new CliBuilder(usage: "./grosserArt -[hsd] " +
                 "-[w|-workers] <numberOfWorkers> -[t|-timeout] <timeout> -[i|-input] <inputFile> -[o|-output] <outputFile> ")
 
         argCtl.with {
