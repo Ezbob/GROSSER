@@ -1,0 +1,22 @@
+group 'grosser'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = "Grosser"
+
+dependencies {
+    // http://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all
+    compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.4.6'
+    // http://mvnrepository.com/artifact/org.codehaus.gpars/gpars
+    compile group: 'org.codehaus.gpars', name: 'gpars', version: '1.2.1'
+    // http://mvnrepository.com/artifact/org.tinylog/tinylog
+    compile group: 'org.tinylog', name: 'tinylog', version: '1.1'
+    // http://mvnrepository.com/artifact/commons-cli/commons-cli
+    compile group: 'commons-cli', name: 'commons-cli', version: '1.2'
+}
